@@ -88,7 +88,7 @@ snarkjs groth16 verify verification_key.json public.json proof.json
 sleep 5
 
 # Step 25: Turn the verifier into a smart contract
-echo "Exporting the verifier to a Solidity smart contract..."
+echo "Exporting the verifier to a Solidity smart contract (for onchain verification)..."
 snarkjs zkey export solidityverifier circuit_final.zkey verifier.sol
 sleep 5
 
