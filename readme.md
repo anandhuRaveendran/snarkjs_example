@@ -78,7 +78,12 @@ cd backend
 npm init
 npm install express snarkjs cors fs
 ```
-### 9. Create index.js and import snarkjs,fs,cors,express
+#### Copy the following file and paste to the backend folder
+    1. proof.json
+    2. circuit.wasm
+    3. circuit_final.zkey
+    4. public.json
+###  Create index.js and import snarkjs,fs,cors,express
 #### code
 ```
 const express = require('express');
@@ -163,4 +168,8 @@ app.post('/post-file', async (req, res) => {
 app.listen(3000, () => {
     console.log('Server running on port 3000');
 });
+```
+### Start Node
+```
+node index.js
 ```
